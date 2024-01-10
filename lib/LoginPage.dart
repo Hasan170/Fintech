@@ -34,7 +34,7 @@ class LoginPage extends StatelessWidget {
                 // Handle login button press
                 // You can add authentication logic here
               },
-              child: Text('Login'),
+              child: const Text('Login'),
             ),
           ],
         ),

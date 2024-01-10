@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class PersonalLoan extends StatelessWidget {
+  const PersonalLoan({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +57,7 @@ class SectionWidget extends StatelessWidget {
   final String heading;
   final String details;
 
-  const SectionWidget({
+  const SectionWidget({super.key, 
     required this.heading,
     required this.details,
   });

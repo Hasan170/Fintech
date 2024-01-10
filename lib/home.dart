@@ -4,12 +4,13 @@ import 'package:f2fintech/LoginPage.dart';
 import 'package:f2fintech/PersonalLoan.dart';
 import 'package:f2fintech/StudentLoan.dart';
 import 'package:f2fintech/chat_screen.dart';
-import 'package:f2fintech/main.dart';
 import 'package:flutter/material.dart';
 
 // git hub update
 
 class MainPage extends StatelessWidget {
+  const MainPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +32,7 @@ class MainPage extends StatelessWidget {
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
-            Container(
+            SizedBox(
               height: MediaQuery.of(context).size.height / 10,
               child: const DrawerHeader(
                 decoration: BoxDecoration(
@@ -143,7 +144,7 @@ class MainPage extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => HomeLoan(),
+                                    builder: (context) => const HomeLoan(),
                                   ),
                                 );
                               },
@@ -209,7 +210,7 @@ class MainPage extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => BusinessLoan(),
+                                    builder: (context) => const BusinessLoan(),
                                   ),
                                 );
                               },
@@ -275,7 +276,7 @@ class MainPage extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => PersonalLoan(),
+                                    builder: (context) => const PersonalLoan(),
                                   ),
                                 );
                               },
@@ -341,7 +342,7 @@ class MainPage extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => StudentLoan(),
+                                    builder: (context) => const StudentLoan(),
                                   ),
                                 );
                               },
